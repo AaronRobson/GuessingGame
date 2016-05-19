@@ -60,7 +60,7 @@ playGame = do
         guessAgain = haveGuess (pred goesLeft) n
 
 responseIsPositive :: String -> Bool
-responseIsPositive = (`elem` (map (map toLower) ["y", "yes","true","confirm", "1"])) . (map toLower)
+responseIsPositive = (`elem` (map (map toLower) ["y", "yes", "true", "confirm", "1"])) . (map toLower)
 
 askPlayAgain :: IO Bool
 askPlayAgain = do
